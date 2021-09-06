@@ -400,6 +400,7 @@ body{
      color: #FFFFFF;
      transition: color 0.4s ease,
      opacity 0.4s ease;
+     margin-left: 16px;
 }
 
 .footer-logo-name:hover{
