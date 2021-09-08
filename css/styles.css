@@ -165,9 +165,12 @@ body{
 }
 
 
-.features-section ul{
+.features-section ul li{
      list-style: none;
      margin-bottom: 60px;
+}
+.test{
+     list-style: none;
 
 }
 .features-list{
@@ -176,7 +179,7 @@ body{
      width: 864px;
 
 }
-.features-list li{
+.features-list ul li{
      list-style: none;
 }
 .features-image{
