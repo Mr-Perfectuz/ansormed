@@ -11,6 +11,9 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
+     <!-- NORMALIZE CSS  -->
+     <link rel="stylesheet" href="normalize.css">
+
      <!-- STYLES  -->
      <link rel="stylesheet" href="/css/styles.css">
 
@@ -18,124 +21,153 @@
 <body>
 
      <!-- SITE HEADER -->
-     <header class="site-header">
-          <a class="header-logo-link" href="index.html">
-               <!-- Ansormed logo rasmi  -->
-               <div class="header-icon-wrapper">
-                    <img class="header-icon-img" src="/images/logo-icon.png" alt="ansormed logo" width="50" height="50">
-                    <h3>AnsorMed</h3>
-               </div>
-          </a>
+     <nav class="site-header">
+          <div class="header-logo">
+               <a href="#">
+                    <!-- Ansormed logo rasmi  -->
+                    <img
+                    src="images/logo.png"
+                    alt="AnsorMedning logosi" width="50" height="50"
+                    srcset="iimages/logo.png 1x, images/logo@2x.png 2x"/>
+                    <span>AnsorMed</span>
+               </a>
+          </div>
+
           <!-- Navigation bar  -->
-          <nav class="sitenav">
+          <div class="sitenav">
                <ul class="sitenav-list">
-                    <li><a href="#">Xizmatlar</a></li>
-                    <li><a href="#">Dorilar</a></li>
-                    <li><a href="#">Asal</a></li>
-                    <li><a href="#">Kontaktlar</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li class="sitenav-item"><a href="#">Xizmatlar</a></li>
+                    <li class="sitenav-item"><a href="#">Dorilar</a></li>
+                    <li class="sitenav-item"><a href="#">Asal</a></li>
+                    <li class="sitenav-item"><a href="#">Kontaktlar</a></li>
+                    <li class="sitenav-item"><a href="#">Blog</a></li>
                </ul>
-          </nav>
+          </div>
 
           <!-- Qabulga yozilish tugmasi  -->
           <a class="main-button" href="#">Qabulga yozilish</a>
-     </header>
+     </nav>
 
 
      <!-- HERO  -->
-     <section class="hero">
-          <div class="hero-content" >
-               <h2 class="hero-heading">Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h2>
-               <p class="hero-text">Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.</p>
-               <!-- Qabulga yozilish tugmasi  -->
-               <a class="main-button hero-button" href="#">Qabulga yozilish</a>
+     <main class="hero">
+          <div class="hero-wrapper">
+               <div class="hero-content" >
+                    <h2 class="hero-heading">Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h2>
+                    <p class="hero-text">Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.</p>
+                    <!-- Qabulga yozilish tugmasi  -->
+                    <a class="main-button hero-button" href="#">Qabulga yozilish</a>
+               </div>
+               <!-- Ansormed shifokor rasm  -->
+               <img class="hero-image" src="images/hero.png"
+               srcset="images/hero.png 1x, images/hero@2x.png 2x"
+               alt="ansormed shifokor rasmi" width="423" height="504"
+               />
           </div>
+     </main>
 
-          <!-- Ansormed inson rasim  -->
-          <img class="hero-image" src="/images/hero.png" alt="ansormed shifokor inson rasmi" width="423" height="504" srcset="/images/hero.png 1x
-          /images/hero@2x.png 2x">
-     </section>
-
-     <main class="main-content">
+     <section id="features-section">
           <!-- FEATURES  -->
-          <section class="features">
-               <h2 class="features-heading-title">Xizmatlar</h2>
-               <ul class="site-features-list">
-                    <li class="features-list">
+          <h2 class="features-heading-title">Xizmatlar</h2>
+          <ul >
+               <li>
+                    <div class="features-list">
                          <!-- feature(hijoma) rasmi  -->
-                         <img class="features-image" src="/images/image-hijoma.jpg" alt="hijoma rasmi" width="200" height="200" srcset="/images/image-hijoma.jpg 1x, /images/image-hijoma@2x.jpg 2x">
+                         <div><img class="features-image" src="/images/image-hijoma.jpg" alt="hijoma rasmi" width="200" height="200" srcset="/images/image-hijoma.jpg 1x, /images/image-hijoma@2x.jpg 2x"></div>
                          <div class="features-content">
                               <h3 class="features-heading">Hijoma</h3>
                               <p class="features-info">Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar: «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).</p>
                          </div>
-                    </li>
-                    <li class="features-list">
+                    </div>
+               </li>
+
+
+               <li >
+                    <div class="features-list">
                          <!-- feature(terapiya) rasmi  -->
-                         <img class="features-image" src="/images/image-terapiya.jpg" alt="terapiya bilan davolanish rasmi" width="200" height="200"
-                         srcset="/images/image-terapiya.jpg 1x, /images/image-terapiya@2x.jpg 2x">
+                         <div>
+                              <img class="features-image" src="/images/image-terapiya.jpg" alt="terapiya bilan davolanish rasmi" width="200" height="200"
+                              srcset="/images/image-terapiya.jpg 1x, /images/image-terapiya@2x.jpg 2x">
+                         </div>
                          <div class="features-content">
                               <h3 class="features-heading">Manual terapiya</h3>
                               <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
                          </div>
-                    </li>
-                    <li class="features-list">
+                    </div>
+               </li>
+
+
+               <li >
+                    <div class="features-list">
                          <!-- feature(zuluk) rasmi  -->
-                         <img class="features-image" src="/images/image-zuluk.jpg" alt="zuluk bilan davolanish  rasmi" width="200" height="200"
-                         srcset="/images/image-zuluk.jpg 1x, /images/image-zuluk@2x.jpg 2x"  >
+                         <div>
+                              <img class="features-image" src="/images/image-zuluk.jpg" alt="zuluk bilan davolanish  rasmi" width="200" height="200"
+                              srcset="/images/image-zuluk.jpg 1x, /images/image-zuluk@2x.jpg 2x"  >
+                         </div>
                          <div class="features-content">
                               <h3 class="features-heading">Zuluk bilan davolash</h3>
                               <p class="features-info">Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid sanaladi. Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.</p>
                          </div>
-                    </li>
-                    <li class="features-list">
+                    </div>
+               </li>
+
+
+               <li>
+                    <div class="features-list">
                          <!-- feature(tabiy dori) rasmi  -->
-                         <img class="features-image" src="/images/image-tabiy-dori.jpg" alt="tabiy dorilar rasmi" width="200" height="200"
-                         srcset="/images/image-tabiy-dori.jpg 1x, /images/image-tabiy-dori@2x.jpg 2x">
+                         <div>
+                              <img class="features-image" src="/images/image-tabiy-dori.jpg" alt="tabiy dorilar rasmi" width="200" height="200"
+                              srcset="/images/image-tabiy-dori.jpg 1x, /images/image-tabiy-dori@2x.jpg 2x">
+                         </div>
                          <div class="features-content">
                               <h3 class="features-heading">Tabiiy dori vositalari</h3>
                               <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
                          </div>
-                    </li>
+                    </div>
+               </li>
+
+          </ul>
+          <!-- Qabulga yozilish tugmasi  -->
+          <div class="feature-button-wrapper"><a class="main-button " href="#">Qabulga yozilish</a></div>
+
+
+     </section>
+
+     <!-- Qabul  -->
+     <section class="register">
+          <h2 class="register-heading">Qabulga ro’yxatdan o’ting</h2>
+
+          <div class="register-button-wrapper">
+               <a class="register-button" href="#">Qo’ng’iroq qilish</a>
+               <a class="register-button" href="#">Telegramdan yozish</a>
+          </div>
+
+     </section>
+
+
+     <!-- SITE FOOTER  -->
+     <footer class="site-footer">
+          <div class="header-logo">
+               <a href="#">
+                    <!-- Ansormed logo rasmi  -->
+                    <img
+                    src="images/logo.png"
+                    alt="AnsorMedning logosi" width="50" height="50"
+                    srcset="iimages/logo.png 1x, images/logo@2x.png 2x"/>
+                    <span>AnsorMed</span>
+               </a>
+          </div>
+          <!-- LINKLAR  -->
+          <div class="sitenav">
+               <ul class="sitenav-list">
+                    <li class="sitenav-item"><a href="#">Xizmatlar</a></li>
+                    <li class="sitenav-item"><a href="#">Dorilar</a></li>
+                    <li class="sitenav-item"><a href="#">Asal</a></li>
+                    <li class="sitenav-item"><a href="#">Kontaktlar</a></li>
+                    <li class="sitenav-item"><a href="#">Blog</a></li>
                </ul>
-               <!-- Qabulga yozilish tugmasi  -->
-               <div class="feature-button-wrapper "><a class="feature-button " href="#">Qabulga yozilish</a></div>
-          </section>
+          </div>
+     </footer>
 
-
-          <!-- Qabul  -->
-          <section class="register">
-               <h2 class=" register-heading">Qabulga ro’yxatdan o’ting</h2>
-
-               <div class="register-button-wrapper">
-                    <a class="register-button-call"   href="#">Qo’ng’iroq qilish</a>
-                    <a class="register-button-telegram" href="#">Telegramdan yozish</a>
-               </div>
-
-          </section>
-
-
-          <!-- SITE FOOTER  -->
-          <footer class="site-footer">
-               <div class="footer-container">
-                    <div class="foooter-icon">
-                         <a class="footer-icon-img" href="index.html">
-                              <!-- Ansormed logo rasmi  -->
-                              <img  src="/images/logo-icon.png" alt="ansormed logo" width="50" height="50">
-                              <h3 class="footer-logo-name">AnsorMed</h3>
-                         </a>
-                    </div>
-                    <!-- LINKLAR  -->
-                    <div class="site-footer-list">
-                         <ul>
-                              <li><a href="#">Xizmatlar</a></li>
-                              <li><a href="#">Dorilar</a></li>
-                              <li><a href="#">Asal</a></li>
-                              <li><a href="#">Kontaktlar</a></li>
-                              <li><a href="#">Blog</a></li>
-                         </ul>
-                    </div>
-               </div>
-          </footer>
-     </main>
 </body>
 </html>
