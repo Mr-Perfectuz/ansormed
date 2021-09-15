@@ -271,6 +271,7 @@ body{
      padding: 24px 160px;
      background-color: #222222;
      color: #fff;
+     margin-bottom: 0px !important;
 }
 .site-footer .site-footer-list ul li a{
      color: #fff;
