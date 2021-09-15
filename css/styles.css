@@ -2,7 +2,7 @@
      box-sizing: border-box;
 }
 body{
-     font-family: "Open Sans", "sans-serif";
+     font-family: "Open Sans", sans-serif, "Open Sans Condensed";
      color:  #222222;
      line-height: 1.5;
      margin: 0;
@@ -15,6 +15,12 @@ body{
      align-items: center;
      padding: 24px 160px;
 }
+
+.header-container{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
 .header-logo a{
      display: flex;
      align-items: center;
@@ -22,6 +28,7 @@ body{
      font-size: 24px;
      color: #222222;
      font-weight: 600;
+     margin-right: 80px;
 }
 
 .header-logo a:hover {
@@ -77,8 +84,8 @@ body{
      text-decoration: none;
      padding: 12px 24px;
      border-radius: 8px;
-     margin-left: 32px;
-     font-family: 'Open Sans Condensed', sans-serif;
+     margin-left: 114px;
+     font-family: 'Open Sans Condensed', sans-serif, "Open Sans";
      letter-spacing: 2px;
      font-weight: 700;
      font-size: 15px;
@@ -113,7 +120,7 @@ body{
 .hero-content{
      color: #fff;
      padding-top: 120px;
-     font-family:  'Open Sans Condensed', sans-serif;
+     font-family:  'Open Sans Condensed', sans-serif, "Open Sans";
 }
 
 .hero-heading{
@@ -123,7 +130,7 @@ body{
 .hero-text{
      width: 440px;
      font-size: 18px;
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Open Sans', sans-serif, "Open Sans Condensed";
      font-weight: 400;
      margin-top: 16px;
 }
@@ -154,7 +161,7 @@ body{
 }
 
 .features-heading-title{
-     font-family: "Open Sans Condensed",  "Open Sans", "sans-serif";
+     font-family: "Open Sans Condensed",  "Open Sans", sans-serif;
      font-style: normal;
      font-weight: 700;
      font-size: 36px;
@@ -189,7 +196,7 @@ body{
      width: 200px;
 }
 .features-heading{
-     font-family: "Open Sans Condensed",  "Open Sans", "sans-serif";
+     font-family: "Open Sans Condensed",  "Open Sans", sans-serif;
      font-style: normal;
      font-weight: 700;
 }
@@ -218,7 +225,7 @@ body{
 
 .register-heading{
      font-size: 36px;
-     font-family: "Open Sans Condensed",  "Open Sans", "sans-serif";
+     font-family: "Open Sans Condensed",  "Open Sans", sans-serif;
      color: #fff;
 }
 .register-button-wrapper{
@@ -285,79 +292,3 @@ body{
 .site-footer .header-logo a:active{
      color: rgba(222, 46, 84, 0.6);
 }
-/* .site-footer{
-     background-color: #222222;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 24px 160px;
-}
-.footer-container{
-     width: 1100px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-.foooter-icon a{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: #FFFFFF;
-     text-decoration: none;
-     width: 185px;
-     height: 50px;
-     transition: color 0.4s ease,
-     opacity 0.4s ease;
-}
-
-.foooter-icon:hover{
-     opacity: 0.8;
-     color: #DE2E54;
-}
-.foooter-icon:active{
-     opacity: 0.6;
-     color: #fff;
-}
-
-.footer-logo-name{
-     font-weight: 600;
-     line-height: 33px;
-     color: #FFFFFF;
-     transition: color 0.4s ease,
-     opacity 0.4s ease;
-     margin-left: 16px;
-}
-
-.footer-logo-name:hover{
-     color: #DE2E54;
-}
-
-.footer-logo-name:active{
-     color: #fff;
-}
-
-.site-footer-list a{
-     color: #FFFFFF;
-     font-size: 14px;
-     font-weight: bold;
-     text-decoration: none;
-     line-height: 1.5;
-     letter-spacing: 2px;
-     text-transform: uppercase;
-     margin: 32px;
-     transition: color 0.8s ease,
-     opacity 0.4s ease;
-}
-
-.site-footer-list a:hover{
-     color: #DE2E54;
-}
-.site-footer-list a:active{
-     opacity: 0.6;
-     color: #fff;
-}
-.site-footer-list ul{
-     list-style: none;
-     display: flex;
-     justify-content: space-between;
-} */
