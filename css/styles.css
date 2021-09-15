@@ -231,7 +231,8 @@ body{
 .register-button-wrapper{
      display: flex;
      justify-content:center;
-     margin: 40px 40px;
+     /* margin: 40px 40px; */
+     justify-content: center;
 }
 
 .register-button-wrapper .register-button {
@@ -244,8 +245,9 @@ body{
      color: #fff;
      font-size: 15px;
 }
-.register-button{
+.register-button:first-child{
      margin-right: 40px;
+
 }
 .register-button:hover{
      color: #fff;
