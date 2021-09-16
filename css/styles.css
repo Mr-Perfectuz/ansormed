@@ -287,8 +287,9 @@ body{
 .site-footer .site-footer-list ul li a:hover{
      color: #de2e54;
 }
-.site-footer .site-footer-list ul li a:hover{
-     color: rgba(222, 46, 84, 0.6);
+.site-footer .site-footer-list ul li a:active{
+     color: #fff;
+     opacity: 0.6;
 }
 
 .site-footer .header-logo a{
@@ -300,5 +301,6 @@ body{
      color: #de2e54;
 }
 .site-footer .header-logo a:active{
-     color: rgba(222, 46, 84, 0.6);
+     color: #fff;
+     opacity: 0.6;
 }
