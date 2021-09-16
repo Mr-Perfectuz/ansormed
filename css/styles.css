@@ -280,6 +280,16 @@ body{
      color: #fff;
      margin-bottom: 0px !important;
 }
+
+.container{
+     width: 100%;
+     max-width: 1160px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
 .site-footer .site-footer-list ul li a{
      color: #fff;
      font-weight: 700;
