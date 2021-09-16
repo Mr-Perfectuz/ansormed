@@ -34,8 +34,9 @@ body{
 .header-logo a:hover {
      color: #de2e54;;
 }
-.header-logo a:hover {
+.header-logo a:active {
      color: rgba(223, 48, 86, 0.8);
+     opacity: 0.6;
 }
 .header-logo a img {
      margin-right: 16px;
