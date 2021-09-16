@@ -8,6 +8,11 @@ body{
      margin: 0;
      padding: 0;
 }
+
+*:focus{
+     outline: 2px dotted #de2e54;
+     outline-offset: 2px;
+}
 /* SITE HEADER  */
 .site-header{
      display: flex;
@@ -79,6 +84,7 @@ body{
      color: rgba(223, 48, 86, 0.8);
 }
 .main-button{
+     display: inline-block;
      background-color: #de2e54;;
      color: #fff;
      text-transform: uppercase;
