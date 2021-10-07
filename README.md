@@ -1,3 +1,3 @@
 # ansormed
 
-https://az-namanganliklar24.netlify.app/
+https://az-ansormed.netlify.app/
